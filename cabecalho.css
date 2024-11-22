@@ -1,0 +1,135 @@
+body {
+    margin: 0;   
+    padding: 0; 
+}
+
+.cabecalho {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    background-image: url("./background-jogo.png");    
+}
+
+.cabecalho__logo {
+    width: 30em;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content:first baseline;
+    flex-wrap: wrap;
+    background-color: #272B3a87;
+}
+
+.cabecalho__menu {
+    background-color: transparent;
+}
+
+.cabecalho__item-menu {
+    display: inline-block;
+    margin: 10px;
+}
+
+.cabecalho__item-menu a {
+    display: inline-block;
+    padding: 1.86em 1.42em;
+}
+
+.cabecalho__item-menu--matricular {
+    margin-left: 1.42em;
+    border-radius: 6px;
+    background-color: orange;
+    margin: 10px;
+}
+
+
+@media (min-width: 640px){
+.cabecalho {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+/*@media (max-width: 640px){
+.cabecalho__logo {
+    display: none;
+}}*/
+
+
+
+@media (max-width: 770px) {
+    .cabecalho__item-menu--matricular {
+        margin-left: 1.42em;
+        border-radius: 6px;
+        background-color: rgb(206, 79, 11);
+
+    }
+    .cabecalho__item-menu--matricular a {
+        padding: 1.8em  3.5em;
+    }
+
+    .cabecalho__logo {
+        width: 20em;
+        margin-top: 0;
+    }
+
+    /*.cabecalho {
+        top: 10px;  
+    }*/
+
+    .cabecalho__menu {
+        /*background-color: transparent;*/
+        display: none;
+    }
+
+    .carousel-container3 {
+        display: none;
+    }
+
+    .titulo_linguagem {
+        display: none;
+    }
+
+    .cabecalho {
+        position: relative;
+        text-align: center;  
+    }
+
+    header {
+        display: none;  
+    }
+
+    .carousel-container {
+        /*background-color: transparent;*/
+        display: none;
+    }
+
+    .carousel-container2 {
+        display: none;
+    }
+
+    /*.topo, #chatButton {
+        display: none;
+    }*/
+
+   main {
+    height: 100vh;
+   }
+
+   a.whatsapp-button {
+    display: none;
+}
+    
+}
+
+
+
+
