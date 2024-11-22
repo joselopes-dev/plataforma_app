@@ -1,0 +1,51 @@
+
+.carousel31 {
+    background-color: rgb(194, 240, 240);
+}
+
+.carousel3 {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.card3 {
+    padding: 10px;
+    text-align: center;
+    /*overflow: hidden; /* Isso garante que a imagem não "vaze" para fora do card durante o zoom */
+}
+
+.card3 img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; /* Animação suave do zoom */
+}
+
+.card3 img:hover {
+    transform: scale(1.1); /* Aumenta a escala da imagem para 110% */
+}
+
+
+.btn31 {
+    border: transparent;
+    background-color: rgb(194, 240, 240);
+    font-weight: bold;
+    font-size: 20px;
+} 
+
+.btn31 a:hover {
+    color: #0056b3;
+}
+
+.titulo_linguagem {
+    text-align: center;
+}
+
+
+
+
+

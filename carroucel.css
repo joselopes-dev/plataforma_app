@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contêiner do carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Wrapper para o carrossel */
+.carousel-wrapper {
+    display: flex;
+}
+
+/* Definição dos cards */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 600px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card {
+    flex: 0 0 350px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* Animação da luz colorida */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -4px; /* Ajustar posição */
+    left: -4px; /* Ajustar posição */
+    right: -4px; /* Ajustar posição */
+    bottom: -4px; /* Ajustar posição */
+    border-radius: 8px;
+    /*background: linear-gradient(45deg, rgb(46, 98, 229), rgb(17, 35, 169), rgb(11, 77, 157), rgb(28, 30, 161), blue, rgb(195, 153, 28), rgb(55, 114, 187));*/
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: animate-border 5s linear infinite;
+    border: 2px solid transparent; /* Isso fará com que a borda fique visível */
+    gap: 5px;
+}
+
+@keyframes animate-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Botões de navegação */
+#btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+#btn:focus {
+    outline: none;
+}
+
+
+.botao32:hover {
+    color: white;
+    background-color: #0056b3;
+}
+
+.botao32 {
+    width: 80%;
+}
+
+.dive32 {
+    text-align: center;
+}
+
