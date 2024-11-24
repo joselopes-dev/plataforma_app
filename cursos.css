@@ -84,35 +84,35 @@
     transition: .25s;
 }
 .curso_python {
-    background-image: url(../logo_python.png);
+    background-image: url(./logo_python.png);
 }
 .curso_java {
-    background-image: url(../logo_java.png);
+    background-image: url(./logo_java.png);
     
 }
 .curso_ccharp{
-    background-image: url(../logo-charp.png);
+    background-image: url(./logo-charp.png);
 }
 .curso_javascript {
-    background-image: url(../logo_java-script.png);
+    background-image: url(./logo_java-script.png);
 }
 .curso_C {
-    background-image: url(../logo_C_azul.png);
+    background-image: url(./logo_C_azul.png);
 }
 .curso_css {
-    background-image: url(../logo-css.png);
+    background-image: url(./logo-css.png);
 }
 .curso_html{
-    background-image: url(../logo-html.png);
+    background-image: url(./logo-html.png);
 }
 .curso_php{
-    background-image: url(../logo_php.png);
+    background-image: url(./logo_php.png);
 }
 .curso_ruby{
-    background-image: url(../logo_ruby.png);
+    background-image: url(./logo_ruby.png);
 }
 .curso_Cmais{
-    background-image: url(../logo_cmais.png);
+    background-image: url(./logo_cmais.png);
 }
 .cursos__lista img {
     width: 2rem;
@@ -123,7 +123,7 @@
 @media(min-width:768px){
     /*.cusos{
         padding: 5rem 5% 0;
-        background-image: url(/img/home-background.png);
+        background-image: url(./img/home-background.png);
     }*/
     
     .cursos__chamada{
