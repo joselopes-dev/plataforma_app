@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+     <title>Plataforma Code-X</title>
+     <link rel="icon" href="logo_pagina2.png">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,
+     600,700,&display=block">
+     <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href="container.css">
+     <link rel="stylesheet" href="cabecalho.css">
+     <link rel="stylesheet" href="cursos.css">
+     <link rel="stylesheet" href="video.css">
+     <link rel="stylesheet" href="beneficios.css">
+     <link rel="stylesheet" href="rodape.css">
+     <link rel="stylesheet" href="form-newsletter.css">
+     <link rel="stylesheet" href="matricula.css">
+    </head>
+
+     <!-- Âncora de topo invisível -->
+     <a id="topo"></a>
+
+    <body>
+        <header class="cabecalho container">
+        
+                <img class="cabecalho__logo" src="CODE-X-1.png" alt="">
+            
+        </header>
+            
+            
+        <main>
+            <section class="cursos">
+                <article class="cursos__chamada --largura-grande" id="tamanho">
+                    <br>
+                    <h1 class="chamada__titulo">Html - <img src="./logo-html.png" alt="" width="50px" height="50px"> <hr> </h1>
+                </article>
+
+                <div class="centro">
+                <div class="flex1">
+                    <p> O HTML (Hypertext Markup Language) é a linguagem fundamental para a criação de páginas web. Utiliza "tags" para estruturar 
+                        e formatar conteúdo, facilitando a leitura por humanos e a interpretação por máquinas, como motores de busca. Geralmente, 
+                        é combinado com CSS e JavaScript para criar experiências web mais dinâmicas
+                    </p>
+                </div>
+
+                <div class="flex1">
+                    <p class="separa">
+                        1. O que é HTML? <br>
+                        O HTML é uma linguagem de marcação usada para estruturar o conteúdo da web. Isso significa que ele define como o texto, 
+                        imagens, links e outros elementos devem ser organizados em uma página. O HTML não é uma linguagem de programação; em vez 
+                        disso, é uma forma de descrever a estrutura do conteúdo.
+                      </p>            
+                    </p><div> <br><img class="codigo1" src="img_html.png" alt=""></div>
+                <p>
+                    5. Integração com CSS e JavaScript <br>
+                    CSS (Cascading Style Sheets): Usado para estilizar o conteúdo HTML, permitindo alterar cores, fontes, layouts, etc. JavaScript: 
+                    Adiciona interatividade e dinamicidade às páginas, como animações, validações de formulários e manipulação de elementos em tempo 
+                    real.            
+                </p>
+            </div>
+
+            <br><br>
+            </section>
+   
+        </main>
+        
+
+        <footer class="rodape container">
+            <section class="rodape__secao rodape__secao--sobre"> 
+                <img class ="rodape__logo" src="CODE-X-1.png" alt="logo da Code - X">
+
+                <p class="rodape_-infos-empresa">
+                    Sistemas de Informática 
+                    <br>
+                    CNPJ 23.444.124/0006-25
+                    <br>
+                    Rua da paz - Manaus/AM
+                     <br>
+                     Telefone (92) 98804-8026                   
+                    </p>
+                <ul class="rodape__lista-midias-sociais">
+                    <li class="rodape__item-midias-sociais">
+                        <a href="#">
+                            <img src="facebook-2429746_1280.png" alt="Code - X no Facebook">
+                            </a>
+                         </li>
+                    </li>
+                    <li class="rodape__item-midias-sociais">
+                        <a href="#">
+                      
+                         <img src="you-tube-3383601_1280.png" alt="Code - X no YouTube">
+                         </a>
+                         </li>
+                         <li class="rodape__item-midias-sociais">
+                         <a href="#">
+                         <img src="instagram-1675670_1280.png" alt="Instagram">
+                         </a>
+                         </li>
+                </ul>
+
+            </section>
+
+            </footer>
+
+             <!-- Âncora para voltar ao topo (seta) -->
+        <a href="#topo" class="topo">&#8679 <br> Topo</a>
+
+            <style>
+
+                   /* Estilo da âncora */
+                   .topo {
+                position: fixed;
+                bottom: 100px;
+                right: 20px;
+                background-color: #007BFF;
+                color: white;
+                padding: 20px 15px;
+                border-radius: 50%;
+                font-size: 10px;
+                text-align: center;
+                text-decoration: none;
+                transition: background-color 0.3s;
+                cursor: pointer;
+                z-index: 10; /* Um valor maior que o dos outros elementos */
+                }
+
+                .topo:hover {
+                background-color: #0056b3;
+                }
+
+
+                .cabecalho.container{
+                    display: flex;
+                    background-image: url(./background-jogo.png);
+                    height: 100px;
+                    width: 100%;  
+                    position: fixed;
+                }
+
+                .fle {
+                    display: flex;
+                    gap: 40px;  
+                    font-size: 15px;
+                    
+                }
+
+                .flex1 {
+                    /*display: flex;*/
+                    border: solid rgb(5, 57, 109) 2px;
+                    width: 90%;
+                    padding: 10px;
+                    text-align: justify;
+                }
+
+                .flex2 {
+                    /*display: flex;*/
+                    border: solid rgb(5, 57, 109) 2px;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: justify;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+
+                .centro {
+                   text-align: center;
+                   margin-right: 9.8%;
+                   margin-left: 12%;
+                }
+
+                .centro p {
+                    text-align: justify; /* Justifica o texto */
+                    text-indent: 2cm; /* Indenta a primeira linha */
+                    margin-bottom: 1.5em; /* Adiciona espaço entre parágrafos */
+                    line-height: 1.5; /* Define o espaçamento entre as linhas */
+                }
+
+                .codigo1 {
+                    width: 100%; 
+                }
+
+
+                @media (max-width: 480px) {
+                   .codigo1 {
+                        height: 70px;
+                    }  
+
+                    .fle { 
+                    font-size: 15px;
+                    }
+
+                    #tamanho {
+                    padding: 0px 0px 100px 0px;
+                }
+                }
+
+                .separa {
+                    padding: 0px 0px 10px 0px;
+
+                }
+
+               strong {
+                color: aqua;
+                font-style: italic;
+                font-weight: 800;
+                font-family: 'Times New Roman', Times, serif; 
+                }
+            </style>
+
+
+
+    </body>
+
+</html>

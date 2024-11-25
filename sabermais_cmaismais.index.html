@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+     <title>Plataforma Code-X</title>
+     <link rel="icon" href="logo_pagina2.png">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,
+     600,700,&display=block">
+     <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href="container.css">
+     <link rel="stylesheet" href="cabecalho.css">
+     <link rel="stylesheet" href="cursos.css">
+     <link rel="stylesheet" href="video.css">
+     <link rel="stylesheet" href="beneficios.css">
+     <link rel="stylesheet" href="rodape.css">
+     <link rel="stylesheet" href="form-newsletter.css">
+     <link rel="stylesheet" href="matricula.css">
+    </head>
+    
+     <!-- Âncora de topo invisível -->
+     <a id="topo"></a>
+
+    <body>
+        <header class="cabecalho container">
+        
+                <img class="cabecalho__logo" src="CODE-X-1.png" alt="">
+            
+        </header>
+            
+            
+        <main>
+            <section class="cursos">
+                <article class="cursos__chamada --largura-grande" id="tamanho">
+                    <br>
+                    <h1 class="chamada__titulo">C++ - <img src="./C_MIAS_MAIS.png" alt="" width="50px" height="50px"> <hr> </h1>
+                </article>
+
+                <div class="centro">
+
+                <div class="flex1">
+                    <p class="separa">
+                        1. Programação Orientada a Objetos (OOP) <br>
+                        •	Classes e Objetos: C++ permite a definição de classes, que são moldes para criar objetos. Uma classe pode conter 
+                        atributos (variáveis) e métodos (funções). <br>
+                        •	Herança: Permite que uma classe derive de outra, reutilizando código e permitindo hierarquias. <br>
+                        •	Polimorfismo: Permite que funções ou métodos se comportem de maneira diferente dependendo do tipo do objeto que os 
+                        chama. <br>
+                        •	Encapsulamento: Mantém os dados seguros dentro de uma classe, expondo apenas o que é necessário. <br>
+                        
+                      </p>
+            
+                        <p>                                    
+                        2. Templates <br>
+                        •	Permitem escrever funções e classes genéricas que podem operar com diferentes tipos de dados. Isso proporciona 
+                        flexibilidade e reutilização de código. <br>
+                        •	Exemplo de Template de Função: <br>
+                        <div> <br><img class="codigo1" src="img_C_mais_mais/codigo_c_mais1.png" alt=""></div>                      
+                        </p>
+
+                        <p>
+                        3. Manipulação de Memória <br>
+                        •	Ponteiros: C++ permite o uso de ponteiros para acessar diretamente a memória, o que é poderoso, mas requer cuidado 
+                        para evitar vazamentos de memória. <br>
+                        •	Referências: São outra forma de se referir a variáveis, sem a complexidade dos ponteiros, tornando o código mais 
+                        seguro e legível. <br>
+                       
+                    </p><br>
+                    <p>
+                        4. Biblioteca Padrão (STL) <br>
+                        •	A STL oferece containers (como vector, list, map), algoritmos e iteradores que facilitam a manipulação de dados. <br>
+                        •	Exemplo de uso do vector: <br>
+                    <div> <br><img class="codigo1" src="img_C_mais_mais/codigo_c_mais2.png" alt=""></div>
+                                               
+                </p> <br><br>
+
+                <p>
+                        5. C++ Moderno (C++11 e além) <br>
+                        •	Lambda Expressions: Permitem criar funções anônimas diretamente onde são necessárias. <br>
+                        •	Smart Pointers: std::unique_ptr e std::shared_ptr ajudam a gerenciar a memória automaticamente, evitando vazamentos. <br>
+                       
+                </p>
+                </div>
+                </div>
+
+            <br><br>
+            </section>
+   
+        </main>
+        
+
+        <footer class="rodape container">
+            <section class="rodape__secao rodape__secao--sobre"> 
+                <img class ="rodape__logo" src="CODE-X-1.png" alt="logo da Code - X">
+
+                <p class="rodape_-infos-empresa">
+                    Sistemas de Informática 
+                    <br>
+                    CNPJ 23.444.124/0006-25
+                    <br>
+                    Rua da paz - Manaus/AM
+                     <br>
+                     Telefone (92) 98804-8026                   
+                    </p>
+                <ul class="rodape__lista-midias-sociais">
+                    <li class="rodape__item-midias-sociais">
+                        <a href="#">
+                            <img src="facebook-2429746_1280.png" alt="Code - X no Facebook">
+                            </a>
+                         </li>
+                    </li>
+                    <li class="rodape__item-midias-sociais">
+                        <a href="#">
+                      
+                         <img src="you-tube-3383601_1280.png" alt="Code - X no YouTube">
+                         </a>
+                         </li>
+                         <li class="rodape__item-midias-sociais">
+                         <a href="#">
+                         <img src="instagram-1675670_1280.png" alt="Instagram">
+                         </a>
+                         </li>
+                </ul>
+
+            </section>
+
+            </footer>
+
+             <!-- Âncora para voltar ao topo (seta) -->
+        <a href="#topo" class="topo">&#8679 <br> Topo</a>
+
+            <style>
+
+                  /* Estilo da âncora */
+                  .topo {
+                position: fixed;
+                bottom: 100px;
+                right: 20px;
+                background-color: #007BFF;
+                color: white;
+                padding: 20px 15px;
+                border-radius: 50%;
+                font-size: 10px;
+                text-align: center;
+                text-decoration: none;
+                transition: background-color 0.3s;
+                cursor: pointer;
+                z-index: 10; /* Um valor maior que o dos outros elementos */
+                }
+
+                .topo:hover {
+                background-color: #0056b3;
+                }
+
+                .cabecalho.container{
+                    display: flex;
+                    background-image: url(./background-jogo.png);
+                    height: 100px;
+                    width: 100%;  
+                    position: fixed;
+                }
+
+                .fle {
+                    display: flex;
+                    gap: 40px;  
+                    font-size: 15px;
+                }
+
+                .flex1 {
+                    /*display: flex;*/
+                    border: solid rgb(5, 57, 109) 2px;
+                    width: 90%;
+                    padding: 10px;
+                    text-align: justify;
+                }
+
+                .flex2 {
+                    /*display: flex;*/
+                    border: solid rgb(5, 57, 109) 2px;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: justify;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+
+                .centro {
+                   text-align: center;
+                   margin-right: 9.8%;
+                   margin-left: 12%;
+                }
+
+                .centro p {
+                    text-align: justify; /* Justifica o texto */
+                    text-indent: 2cm; /* Indenta a primeira linha */
+                    margin-bottom: 1.5em; /* Adiciona espaço entre parágrafos */
+                    line-height: 1.5; /* Define o espaçamento entre as linhas */
+                }
+
+                .codigo1 {
+                    width: 100%; 
+                }
+
+
+                @media (max-width: 480px) {
+                   .codigo1 {
+                        height: 70px;
+                    }  
+
+                    .fle { 
+                    font-size: 15px;
+                    }
+
+                    #tamanho {
+                    padding: 0px 0px 100px 0px;
+                }
+                }
+
+                .separa {
+                    padding: 0px 0px 10px 0px;
+                }
+
+               strong {
+                color: aqua;
+                font-style: italic;
+                font-weight: 800;
+                font-family: 'Times New Roman', Times, serif; 
+                }
+
+            </style>
+
+
+
+    </body>
+
+</html>
