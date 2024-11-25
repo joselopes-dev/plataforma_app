@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="simbolopagi.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <title>Code-X</title>
+    
+</head>
+<body>
+    <div id="confetti" class="confetti"></div>
+    <div class="titulo"> ESTRUTURAS DE CONTROLE </div>
+    
+    <!--<div class="pergunta">Code - X</div>-->
+    <div class="kanban">
+        <div class="column5">
+            
+            <div id="draggable-1" class="item" draggable="true" ondragstart="onDragStart(event);"></div>
+            <div id="draggable-2" class="item" draggable="true" ondragstart="onDragStart(event);"></div>
+            <div id="draggable-3" class="item" draggable="true" ondragstart="onDragStart(event);"></div>
+            <div id="draggable-4" class="item" draggable="true" ondragstart="onDragStart(event);"></div> 
+            <div id="draggable-5" class="item" draggable="true" ondragstart="onDragStart(event);"></div>
+            <div id="draggable-6" class="item" draggable="true" ondragstart="onDragStart(event);"></div>
+            
+        </div>
+        <div class="column6"><div id="error-message" class="error-message"></div></div>
+    </div>
+
+    
+    <div class="cont">
+    
+    <div class="botao1 ">
+         
+        <a href="index_ruby1.html"><input class="botaoo" type="button" value="Próximo" onClick="history.forward()"></a>
+        
+    </div>
+
+    <div class="botao1">
+         
+        <a href="./codigo_ruby3.png"><input class="botaoo" type="button" value="Código" onClick="history.forward()"></a>
+        
+    </div>
+
+    <div class="botao1">
+         
+        <a href="https://www.youtube.com/watch?v=K10u3XIf1-Q"><input class="botaoo" type="button" value="Vídeo" onClick="history.forward()"></a>
+        
+    </div>
+
+    <div class="botao1">
+         
+        <a href="../index_plataforma.html"><input class="botaoo" type="button" value="Menu" onClick="history.forward()"></a>
+        
+    </div>
+    </div>
+
+
+
+
+    <script src="./script_ruby3.js"></script>
+   
+    <style>
+
+body {
+   font-family: Arial, sans-serif;
+   background-image: url(./background-jogo.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100vw;
+   height: 100vh;
+}
+
+.column5 {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 10px;
+   width: 600px;
+   height: 600px;
+   border-radius: 5px;
+   background-image: url(./background_numeros.jpeg);
+}
+
+.column6 {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 10px;
+   width: 600px;
+   height: 600px;
+   border-radius: 5px;
+   background-image: url(./background_numeros.jpeg);
+    }
+
+    @media (max-width: 500px) {
+#draggable {
+    font-size: 12px;  
+     
+    }
+
+.column5 {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 10px;
+   width: 170px;
+   height: 800px;
+   border-radius: 5px;
+   background-image: url(./background_numeros.jpeg);
+}
+
+.column6 {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 10px;
+   width: 170px;
+   height: 800px;
+   border-radius: 5px;
+   background-image: url(./background_numeros.jpeg);
+    }
+}
+
+.titulo{
+    color: white;
+}
+    </style>
+    
+</body>
+</html>
