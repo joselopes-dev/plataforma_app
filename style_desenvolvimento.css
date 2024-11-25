@@ -1,0 +1,53 @@
+body {
+    background-image: url("background-jogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo do botão */
+button {
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+}
+
+button p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+}
+
+button:hover {
+    background-color: orange;
+    color: black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#container25 {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões, ajuste conforme necessário */
+}

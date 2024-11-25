@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style_desenvolvimento.css">
+    <title>Plataforma Code X</title>
+</head>
+<body>
+    <h1 class="letras">Área de Treinamento </h1><hr>
+
+    <div class="imagem25">
+        <img src="./img_codepen.png" width="45%" height="400" title="imagem site code pen">
+
+        <img src="./img_onecompiler.png" width="45%" height="400" title="imagem site onecompiler">
+    </div>
+
+    <div id="container25">
+
+    <div class="container">
+        <!-- Botão para abrir CodePen -->
+        <button id="confettiButton">Entrar para o treinamento HTML, CSS e JavaScript <br><br> (CodePen)</button>
+    </div>
+
+    <div class="container">
+        <!-- Botão para abrir Onecompiler -->
+        <button id="confettiButton2">Entrar para o treinamento das outras linguagens <br><br> (Onecompiler)</button>
+    </div>
+
+    </div>
+
+    <style>
+        #container25 {
+            display: flex;
+            gap: 10px; /* Espaço entre os botões, ajuste conforme necessário */
+        }
+
+        .container {
+            flex: 10; /* Opcional: ajusta a largura dos botões para ocuparem a mesma quantidade de espaço */
+        }
+
+        .imgagem25 {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .letras {
+            font-size: 40px;
+        }
+    </style>
+
+    <script>
+        // Função para lançar confete
+        function launchConfetti() {
+  
+        }
+
+        // Adiciona o evento de clique diretamente ao botão
+        document.getElementById("confettiButton").addEventListener("click", function () {
+            launchConfetti();
+            window.open("https://codepen.io/pen/", "_blank"); // Abre o link em nova aba
+        });
+
+         // Função para lançar confete
+         function launchConfetti2() {
+  
+        }
+
+        // Adiciona o evento de clique diretamente ao botão
+        document.getElementById("confettiButton2").addEventListener("click", function () {
+            launchConfetti2();
+            window.open("https://onecompiler.com/", "_blank"); // Abre o link em nova aba
+        });
+    </script>
