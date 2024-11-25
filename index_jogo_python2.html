@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="simbolopagi.png"/>
+    <link rel="stylesheet" href="style_jogo2.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <title>Code-X - Jogos</title>
+</head>
+<body>
+    <div id="confetti" class="confetti"></div>
+    <div class="titulo">Jogos de Algoritmos - Python</div>
+
+    <!-- Contêiner principal dos jogos -->
+    <div class="container-jogos jogos2">
+        <!-- Jogo 1 - Algoritmo Triângulo -->
+        <div id="jogo1" class="jogo">
+            <h2>Algorítmo Triângulo - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game1-items">
+                    <!-- Elementos do Jogo 1 -->
+                    <div id="draggable-1" class="item" draggable="true">Item 1</div>
+                    <div id="draggable-2" class="item" draggable="true">Item 2</div>
+                    <div id="draggable-3" class="item" draggable="true">Item 3</div>
+                    <div id="draggable-4" class="item" draggable="true">Item 4</div>
+                    <div id="draggable-5" class="item" draggable="true">Item 5</div>
+                    <div id="draggable-6" class="item" draggable="true">Item 6</div>
+                    <div id="draggable-7" class="item" draggable="true">Item 7</div>
+                    <div id="draggable-8" class="item" draggable="true">Item 8</div>
+                    <div id="draggable-9" class="item" draggable="true">Item 9</div>
+                </div>
+                <div class="columnx" id="drop-column"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+            <button class="check-button" onclick="checkSequenceTriangulo()">Verificar Sequência Triângulo</button>
+            
+            <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+            <button class="reset-button" onclick="resetGame('jogo1')">Refazer Jogo</button>
+        </div>
+
+        </div>
+
+        
+         <!-- Jogo 2 - Verificador de Fatorial -->
+         <div id="jogo2" class="jogo" style="display: none;">
+            <h2>Verificador de Fatorial - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game2-items">
+                    <!-- Elementos do Jogo 2 -->
+                    <div id="draggable-21" class="item" draggable="true"></div>
+                    <div id="draggable-22" class="item" draggable="true"></div>
+                    <div id="draggable-23" class="item" draggable="true"></div>
+                    <div id="draggable-24" class="item" draggable="true"></div> 
+                    <div id="draggable-25" class="item" draggable="true"></div>
+                    <div id="draggable-26" class="item" draggable="true"></div>
+                    <div id="draggable-27" class="item" draggable="true"></div>
+                    <div id="draggable-28" class="item" draggable="true"></div> 
+                </div>
+                <div class="columnx" id="drop-column2"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceFatorial()">Verificar Sequência Fatorial</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo2')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+        <!-- Jogo 3 - Verificador de Vogal -->
+        <div id="jogo3" class="jogo" style="display: none;">
+            <h2>Verificador de Vogal - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game3-items">
+                    <!-- Elementos do Jogo 3 -->
+                    <div id="draggable-31" class="item" draggable="true">Item A</div>
+                    <div id="draggable-32" class="item" draggable="true">Item E</div>
+                    <div id="draggable-33" class="item" draggable="true">Item I</div>
+                    <div id="draggable-34" class="item" draggable="true">Item O</div>
+                    <div id="draggable-35" class="item" draggable="true">Item U</div>
+                </div>
+                <div class="columnx" id="drop-column3"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceVogal()">Verificar Sequência Vogal</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo3')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+        <!-- Jogo 4 - Verificador de IMC -->
+        <div id="jogo4" class="jogo" style="display: none;">
+            <h2>Verificador de IMC - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game4-items">
+                    <!-- Elementos do Jogo 4 -->
+                    <div id="draggable-41" class="item" draggable="true"></div>
+                    <div id="draggable-42" class="item" draggable="true"></div>
+                    <div id="draggable-43" class="item" draggable="true"></div>
+                    <div id="draggable-44" class="item" draggable="true"></div> 
+                    <div id="draggable-45" class="item" draggable="true"></div>
+                    <div id="draggable-46" class="item" draggable="true"></div>
+                    <div id="draggable-47" class="item" draggable="true"></div>
+                    <div id="draggable-48" class="item" draggable="true"></div>
+                    <div id="draggable-49" class="item" draggable="true"></div> 
+                    <div id="draggable-50" class="item" draggable="true"></div>
+                    <div id="draggable-51" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column4"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceImc()">Verificar Sequência IMC</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo4')">Refazer Jogo</button>
+            </div>
+
+            </div> 
+
+            <!-- Jogo 5 - Verificador de Média -->
+        <div id="jogo5" class="jogo" style="display: none;">
+            <h2>Verificador de Média - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game5-items">
+                    <!-- Elementos do Jogo 5 -->
+                    <div id="draggable-52" class="item" draggable="true"></div>
+                    <div id="draggable-53" class="item" draggable="true"></div>
+                    <div id="draggable-54" class="item" draggable="true"></div> 
+                    <div id="draggable-55" class="item" draggable="true"></div>
+                    <div id="draggable-56" class="item" draggable="true"></div>
+                    <div id="draggable-57" class="item" draggable="true"></div>
+                    <div id="draggable-58" class="item" draggable="true"></div>
+                    <div id="draggable-59" class="item" draggable="true"></div> 
+                    <div id="draggable-60" class="item" draggable="true"></div>
+                    <div id="draggable-61" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column5"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceMedia()">Verificar Sequência Média</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo5')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 6 - Verificador Par ou Ímpar -->
+        <div id="jogo6" class="jogo" style="display: none;">
+            <h2>Verificação de Par ou Ímpar - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game6-items">
+                    <!-- Elementos do Jogo 5 -->
+                    <div id="draggable-62" class="item" draggable="true"></div>
+                    <div id="draggable-63" class="item" draggable="true"></div>
+                    <div id="draggable-64" class="item" draggable="true"></div> 
+                    <div id="draggable-65" class="item" draggable="true"></div>
+                    <div id="draggable-66" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column6"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequencePar()">Verificar Sequência Par ou Ímpar</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo6')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 7 - Verificador de Idade -->
+        <div id="jogo7" class="jogo" style="display: none;">
+            <h2>Verificação de Idade - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game7-items">
+                    <!-- Elementos do Jogo 5 -->
+                    <div id="draggable-72" class="item" draggable="true"></div>
+                    <div id="draggable-73" class="item" draggable="true"></div>
+                    <div id="draggable-74" class="item" draggable="true"></div> 
+                    <div id="draggable-75" class="item" draggable="true"></div>
+                    <div id="draggable-76" class="item" draggable="true"></div>
+                    <div id="draggable-77" class="item" draggable="true"></div>
+                    <div id="draggable-78" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column7"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceIdade()">Verificar Sequência Idade</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo7')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 8 - Verificador de Conversor de Temperatura -->
+        <div id="jogo8" class="jogo" style="display: none;">
+            <h2>Verificação de Temperatura - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game8-items">
+                    <!-- Elementos do Jogo 8 -->
+                    <div id="draggable-81" class="item" draggable="true"></div>
+                    <div id="draggable-82" class="item" draggable="true"></div>
+                    <div id="draggable-83" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column8"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceTemperatura()">Verificar Sequência Temperatura</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo8')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+             <!-- Jogo 9 - Verificador de Adivinhação de Número-->
+        <div id="jogo9" class="jogo" style="display: none;">
+            <h2>Verificação de Adivinhação de Número - if e else - <img src="logo_python.png" alt="" width="30px" height="30px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game9-items">
+                    <!-- Elementos do Jogo 9 -->
+                    <div id="draggable-92" class="item" draggable="true"></div>
+                    <div id="draggable-93" class="item" draggable="true"></div>
+                    <div id="draggable-94" class="item" draggable="true"></div> 
+                    <div id="draggable-95" class="item" draggable="true"></div>
+                    <div id="draggable-96" class="item" draggable="true"></div>
+                    <div id="draggable-97" class="item" draggable="true"></div>
+                    <div id="draggable-98" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column9"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceAdivinhacao()">Verificar Sequência Adivinhação</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo9')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 10 - Verificador de Adivinhação de Número-->
+        
+           
+
+    <div class="button-container">
+        <button onclick="mostrarJogo('jogo1')">Triângulo</button>
+        <button onclick="mostrarJogo('jogo2')">Fatorial</button>
+        <button onclick="mostrarJogo('jogo3')">Vogal</button>
+        <button onclick="mostrarJogo('jogo4')">IMC</button>
+        <button onclick="mostrarJogo('jogo5')">Média</button>
+        <button onclick="mostrarJogo('jogo6')">Par ou Ímpar</button>
+        <button onclick="mostrarJogo('jogo7')">Idade</button>
+        <button onclick="mostrarJogo('jogo8')">Temperatura</button>
+        <button onclick="mostrarJogo('jogo9')">Adivinhação de Número</button>
+         
+        <button onclick="history.back()" class="botao-voltar">Voltar</button>
+    </div>
+    </div>
+        
+       
+    <!-- Botões para alternar entre os jogos -->
+    
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 5px; /* Espaço entre os botões */ 
+            width: 100%;
+            
+        }
+
+        .button-container button {
+            padding: 5px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 120px;
+            height: 40px;
+        }
+
+
+        .botao-voltar {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .botao-voltar:hover {
+            background-color: #0056b3;
+        }
+
+        .fflex {
+            display: flex;
+        }
+
+
+
+    @media (max-width: 600px) {
+        .button-container {
+            flex-wrap: wrap; /* Botões ficam embaixo uns dos outros */
+            align-items: center; /* Centraliza os botões na coluna */
+           
+        }
+
+        .button-container button {
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            width: 80px;
+            height: 30px;
+        }
+
+        .columnx {
+            height: 500px;
+        }
+
+    }
+
+    </style>
+
+    <script src="script400.js"></script>
+    <script>
+        function mostrarJogo(jogoId) {
+            document.querySelectorAll('.jogo').forEach(jogo => {
+                jogo.style.display = 'none';
+            });
+            document.getElementById(jogoId).style.display = 'block';
+        }
+    </script>
+    
+
+    <script>
+        function resetGame(jogoId) {
+            const jogoElement = document.getElementById(jogoId);
+            const draggableItems = Array.from(jogoElement.querySelectorAll(".columnx .item"));
+            const originalColumn = document.getElementById("game" + jogoId.charAt(jogoId.length - 1) + "-items");
+    
+            // Função para embaralhar os itens
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+    
+            // Embaralhe os itens antes de movê-los de volta para a coluna original
+            const shuffledItems = shuffle(draggableItems);
+            
+            shuffledItems.forEach(item => {
+                originalColumn.appendChild(item);
+                item.style.color = '';  // Remove a cor aplicada
+            });
+    
+            // Limpe qualquer mensagem de erro
+            const errorMessage = jogoElement.querySelector(".error-message");
+            if (errorMessage) errorMessage.innerHTML = "";
+        }
+    </script>
+    
+</body>
+</html>

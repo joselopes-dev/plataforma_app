@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="simbolopagi.png"/>
+    <link rel="stylesheet" href="style_jogo2.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <title>Code-X - Jogos</title>
+</head>
+<body>
+    <div id="confetti" class="confetti"></div>
+    <!--<div class="titulo">Jogos de Algoritmos - C #</div>-->
+
+    <!-- Contêiner principal dos jogos -->
+    <div class="container-jogos jogos2">
+        <!-- Jogo 1 - Algoritmo Triângulo -->
+        <div id="jogo1" class="jogo">
+            <h2>Classificação de Idades-<img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game1-items">
+                    <!-- Elementos que serão usados nos jogos -->
+                    <div id="draggable-1" class="item" draggable="true">Item </div>
+                    <div id="draggable-2" class="item" draggable="true">Item </div>
+                    <div id="draggable-3" class="item" draggable="true">Item </div>
+                    <div id="draggable-4" class="item" draggable="true">Item </div>
+                    <div id="draggable-5" class="item" draggable="true">Item </div>
+                    <div id="draggable-6" class="item" draggable="true">Item </div>
+                    <div id="draggable-7" class="item" draggable="true">Item </div>
+                    <div id="draggable-8" class="item" draggable="true">Item </div>
+                    <div id="draggable-9" class="item" draggable="true">Item </div>
+                    <div id="draggable-10" class="item" draggable="true">Item </div>
+        
+                </div>
+                <div class="columnx" id="drop-column1"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+            <button class="check-button" onclick="checkSequenceClassificacao()">Verificar Sequência Classificação</button>
+            
+            <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+            <button class="reset-button" onclick="resetGame('jogo1')">Refazer Jogo</button>
+        </div>
+
+        </div>
+
+        
+         <!-- Jogo 2 - Verificador de Fatorial -->
+         <div id="jogo2" class="jogo" style="display: none;">
+            <h2>Comparação de Preços de Produtos - if e else - <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game2-items">
+                    <!-- Elementos que serão usados nos jogos -->
+                    <div id="draggable-213" class="item" draggable="true">Item </div>
+                    <div id="draggable-214" class="item" draggable="true">Item </div>
+                    <div id="draggable-215" class="item" draggable="true">Item </div>
+                    <div id="draggable-216" class="item" draggable="true">Item </div>
+                    <div id="draggable-217" class="item" draggable="true">Item </div>
+                    <div id="draggable-218" class="item" draggable="true">Item </div>
+                    <div id="draggable-219" class="item" draggable="true">Item </div>
+                    <div id="draggable-220" class="item" draggable="true">Item </div>
+                    <div id="draggable-221" class="item" draggable="true">Item </div>
+                    <div id="draggable-222" class="item" draggable="true">Item </div>
+        
+                </div>
+                <div class="columnx" id="drop-column2"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceComparacao()">Verificar Sequência Comparação</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo2')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+        <!-- Jogo 3 - Verificador de Vogal -->
+        <div id="jogo3" class="jogo" style="display: none;">
+            <h2>Verificação de Temperatura - if e else - <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game3-items">
+                    <!-- Elementos do Jogo 3 -->
+                    <div id="draggable-223" class="item" draggable="true">Item </div>
+                    <div id="draggable-224" class="item" draggable="true">Item </div>
+                    <div id="draggable-225" class="item" draggable="true">Item </div>
+                    <div id="draggable-226" class="item" draggable="true">Item </div>
+                    <div id="draggable-227" class="item" draggable="true">Item </div>
+                    <div id="draggable-228" class="item" draggable="true">Item </div>
+                    <div id="draggable-229" class="item" draggable="true">Item </div>
+                    <div id="draggable-230" class="item" draggable="true">Item </div>
+                    <div id="draggable-231" class="item" draggable="true">Item </div>
+                    <div id="draggable-232" class="item" draggable="true">Item </div>
+                </div>
+                <div class="columnx" id="drop-column3"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceTemperat()">Verificar Sequência Temperatura</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo3')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+        <!-- Jogo 4 - Verificador de jogadores -->
+        <div id="jogo4" class="jogo" style="display: none;">
+            <h2>Pontuação dos Jogadores - if e else - <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game4-items">
+                    <!-- Elementos do Jogo 4 -->
+                    <div id="draggable-233" class="item" draggable="true">Item </div>
+                    <div id="draggable-234" class="item" draggable="true">Item </div>
+                    <div id="draggable-235" class="item" draggable="true">Item </div>
+                    <div id="draggable-236" class="item" draggable="true">Item </div>
+                    <div id="draggable-237" class="item" draggable="true">Item </div>
+                    <div id="draggable-238" class="item" draggable="true">Item </div>
+                    <div id="draggable-239" class="item" draggable="true">Item </div>
+                    <div id="draggable-240" class="item" draggable="true">Item </div>
+                    <div id="draggable-241" class="item" draggable="true">Item </div>
+                    <div id="draggable-242" class="item" draggable="true">Item </div>
+                </div>
+                <div class="columnx" id="drop-column4"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequencePontuacao()">Verificar Sequência Pontuação</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo4')">Refazer Jogo</button>
+            </div>
+
+            </div> 
+
+            <!-- Jogo 5 - Verificador de Cores -->
+        <div id="jogo5" class="jogo" style="display: none;">
+            <h2>Classificação de Cores de Camisas - if e else - <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game5-items">
+                    <!-- Elementos do Jogo 5 -->
+                    <div id="draggable-243" class="item" draggable="true">Item </div>
+                    <div id="draggable-244" class="item" draggable="true">Item </div>
+                    <div id="draggable-245" class="item" draggable="true">Item </div>
+                    <div id="draggable-246" class="item" draggable="true">Item </div>
+                    <div id="draggable-247" class="item" draggable="true">Item </div>
+                    <div id="draggable-248" class="item" draggable="true">Item </div>
+                    <div id="draggable-249" class="item" draggable="true">Item </div>
+                    <div id="draggable-250" class="item" draggable="true">Item </div>
+                    <div id="draggable-251" class="item" draggable="true">Item </div>
+                    <div id="draggable-252" class="item" draggable="true">Item </div>
+                </div>
+                <div class="columnx" id="drop-column5"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceCores()">Verificar Sequência de Cores</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo5')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 6 - Verificador Contador -->
+        <div id="jogo6" class="jogo" style="display: none;">
+            <h2>Contador de Números Positivos até um limite - if e else - <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game6-items">
+                    <!-- Elementos do Jogo 5 -->
+                    <div id="draggable-253" class="item" draggable="true">Item </div>
+                    <div id="draggable-254" class="item" draggable="true">Item </div>
+                    <div id="draggable-255" class="item" draggable="true">Item </div>
+                    <div id="draggable-256" class="item" draggable="true">Item </div>
+                    <div id="draggable-257" class="item" draggable="true">Item </div>
+                    <div id="draggable-258" class="item" draggable="true">Item </div>
+                </div>
+                <div class="columnx" id="drop-column6"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceContador()">Verificar Sequência Contador</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo6')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 7 - Verificador de Idade -->
+        <div id="jogo7" class="jogo" style="display: none;">
+            <h2>Contagem Regressiva com Mensagem Final - for - <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game7-items">
+                    <!-- Elementos do Jogo 5 -->
+                    <div id="draggable-261" class="item" draggable="true"></div>
+                    <div id="draggable-262" class="item" draggable="true"></div>
+                    <div id="draggable-263" class="item" draggable="true"></div> 
+                    <div id="draggable-264" class="item" draggable="true"></div>
+                    <div id="draggable-265" class="item" draggable="true"></div>
+                    <div id="draggable-266" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column7"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceContagem()">Verificar Sequência Contagem</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo7')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 8 - Jogo de Tabuada -->
+        <div id="jogo8" class="jogo" style="display: none;">
+            <h2>Jogo de Tabuada-while- <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game8-items">
+                    <!-- Elementos do Jogo 8 -->
+                    <div id="draggable-281" class="item" draggable="true"></div>
+                    <div id="draggable-282" class="item" draggable="true"></div>
+                    <div id="draggable-283" class="item" draggable="true"></div>
+                    <div id="draggable-284" class="item" draggable="true"></div>
+                    <div id="draggable-285" class="item" draggable="true"></div>
+                    <div id="draggable-286" class="item" draggable="true"></div>
+                    <div id="draggable-287" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column8"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceTabuada()">Verificar Sequência Tabuada</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo8')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+             <!-- Jogo 9 - Contagem Regressiva-->
+        <div id="jogo9" class="jogo" style="display: none;">
+            <h2>Contagem Regressiva - if e else - <img src="logo-charp.png" alt="" width="40px" height="40px"></h2>
+            <div class="kanban">
+                <div class="columnx" id="game9-items">
+                    <!-- Elementos do Jogo 9 -->
+                    <div id="draggable-292" class="item" draggable="true"></div>
+                    <div id="draggable-293" class="item" draggable="true"></div>
+                    <div id="draggable-294" class="item" draggable="true"></div> 
+                    <div id="draggable-295" class="item" draggable="true"></div>
+                    <div id="draggable-296" class="item" draggable="true"></div>
+                    <div id="draggable-297" class="item" draggable="true"></div>
+                    <div id="draggable-298" class="item" draggable="true"></div>
+                </div>
+                <div class="columnx" id="drop-column9"></div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            
+            <div class="fflex">
+                <button class="check-button" onclick="checkSequenceRegressiva()">Verificar Sequência Regressiva</button>
+                
+                <!-- Botão Refazer Jogo dentro de cada div de jogo -->
+                <button class="reset-button" onclick="resetGame('jogo9')">Refazer Jogo</button>
+            </div>
+            </div> 
+
+            <!-- Jogo 10 - Verificador de Adivinhação de Número-->
+        
+           
+
+    <div class="button-container">
+        <button onclick="mostrarJogo('jogo1')">Classificação</button>
+        <button onclick="mostrarJogo('jogo2')">Comparação</button>
+        <button onclick="mostrarJogo('jogo3')">Temperatura</button>
+        <button onclick="mostrarJogo('jogo4')">Pontuação</button>
+        <button onclick="mostrarJogo('jogo5')">Cores</button>
+        <button onclick="mostrarJogo('jogo6')">Contador</button>
+        <button onclick="mostrarJogo('jogo7')">Contagem</button>
+        <button onclick="mostrarJogo('jogo8')">Tabuada</button>
+        <button onclick="mostrarJogo('jogo9')">Regressiva</button>
+         
+        <button onclick="history.back()" class="botao-voltar">Voltar</button>
+    </div>
+    </div>
+        
+       
+    <!-- Botões para alternar entre os jogos -->
+    
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 5px; /* Espaço entre os botões */ 
+            width: 100%;
+            
+        }
+
+        .button-container button {
+            padding: 5px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 120px;
+            height: 40px;
+        }
+
+
+        .botao-voltar {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .botao-voltar:hover {
+            background-color: #0056b3;
+        }
+
+        .fflex {
+            display: flex;
+        }
+
+       
+
+        @media (max-width: 600px) {
+        .button-container {
+            flex-wrap: wrap; /* Botões ficam embaixo uns dos outros */
+            align-items: center; /* Centraliza os botões na coluna */
+           
+        }
+
+        .button-container button {
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            width: 80px;
+            height: 30px;
+        }
+
+        .columnx {
+            height: 600px;
+        }
+
+    }
+
+    </style>
+
+    <script src="script500.js"></script>
+    <script>
+        function mostrarJogo(jogoId) {
+            document.querySelectorAll('.jogo').forEach(jogo => {
+                jogo.style.display = 'none';
+            });
+            document.getElementById(jogoId).style.display = 'block';
+        }
+    </script>
+    
+
+    <script>
+        function resetGame(jogoId) {
+            const jogoElement = document.getElementById(jogoId);
+            const draggableItems = Array.from(jogoElement.querySelectorAll(".columnx .item"));
+            const originalColumn = document.getElementById("game" + jogoId.charAt(jogoId.length - 1) + "-items");
+    
+            // Função para embaralhar os itens
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+    
+            // Embaralhe os itens antes de movê-los de volta para a coluna original
+            const shuffledItems = shuffle(draggableItems);
+            
+            shuffledItems.forEach(item => {
+                originalColumn.appendChild(item);
+                item.style.color = '';  // Remove a cor aplicada
+            });
+    
+            // Limpe qualquer mensagem de erro
+            const errorMessage = jogoElement.querySelector(".error-message");
+            if (errorMessage) errorMessage.innerHTML = "";
+        }
+    </script>
+
+    
+    
+</body>
+</html>
