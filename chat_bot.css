@@ -1,0 +1,57 @@
+ /* Botão de Chat Flutuante */
+ #chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 10; /* Um valor maior que o dos outros elementos */
+}
+
+/* Janela de Chat */
+#chatWindow {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Um valor maior que o dos outros elementos */
+}
+
+/* Cabeçalho do Chat */
+#chatHeader {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+/* Conteúdo do Chat */
+#chatContent {
+    padding: 10px;
+    overflow-y: auto;
+    height: 300px;
+}
+
+/* Input de Mensagem */
+#chatInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #007bff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
