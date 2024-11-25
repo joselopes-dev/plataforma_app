@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+     <title>Plataforma Code-X</title>
+     <link rel="icon" href="logo_pagina2.png">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,
+     600,700,&display=block">
+    </head>
+
+    <body>
+        <header class="cabecalho container">
+        
+                <img class="cabecalho__logo" src="CODE-X-1.png" alt="">
+            
+        </header>  
+        <main>
+            <section>
+                <article  class="cursos__chamada --largura-grande">
+                    <br>
+                    <h1 id="altura" class="titulo_seguranca">Segurança - <img src="./segurança_dados.png" alt="" width="60px" height="60px" ><hr>  </h1>
+                </article>
+
+                <div class="centro">
+                
+                <div class="flex1">
+                    <p id="controletotal">
+                        A segurança dos dados dos usuários na plataforma Code-X é uma prioridade fundamental. Para proteger as informações pessoais e 
+                        garantir a integridade dos dados, são adotadas práticas robustas, como:
+
+                       <p><strong>1. Criptografia:</strong> Dados sensíveis, como senhas e informações pessoais, são armazenados usando algoritmos de 
+                        
+                        criptografia de ponta, como o bcrypt para senhas e SSL/TLS para dados específicos.</p>
+
+                        <strong>2. Autenticação segura:</strong> Implementação de autenticação de dois fatores (2FA) e senhas fortes para dificultar 
+                        acessos não autorizados.
+
+                        <strong>3. Proteção contra ataques:</strong> Medidas contra ataques comuns, como SQL Injection , XSS (Cross-Site Scripting) e 
+                        CSRF (Cross-Site Request Forgery) , são integradas ao código.
+
+                        <strong>4. Acesso restrito:</strong> Somente usuários autorizados têm acesso às áreas administrativas e de dados sensíveis, 
+                        com diferentes níveis de permissão para acesso limitado.
+
+                        <strong>5. Backups regulares:</strong> Para evitar perdas de dados, são realizados backups periódicos em servidores seguros.
+
+                        <strong>6. Monitoramento constante:</strong> Ferramentas de monitoramento e registros ajudam a identificar e reagir rapidamente 
+                        a qualquer atividade suspeita.
+
+                        <strong>7. Atualizações contínuas:</strong> A plataforma é atualizada regularmente para mantê-la protegida contra vulnerabilidades 
+                        recém-descobertas.
+
+                        Essas medidas demonstram o compromisso do Code-X em garantir um ambiente seguro para seus usuários e proteger seus dados 
+                        contra quaisquer ameaças.
+
+                    </p>
+                    </div>
+                
+                </div>
+            </section>
+   
+        </main>
+        
+        <footer class="rodape_certificado">
+            
+        </footer>
+
+            <style>
+
+                body {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 16px;
+                    font-family: "Helvetica", "Lucida Grande", sans-serif;
+                }
+
+                main {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh; /* Garante que o main ocupe toda a altura da viewport */
+                    padding: 20px; /* Adiciona um espaçamento interno */
+                    box-sizing: border-box;
+                }
+
+                .cabecalho.container{
+                    display: flex;
+                    background-image: url(background-jogo.png);
+                    height: 100px;
+                    width: 100%;  
+                    position: fixed;
+                }
+
+                .flex1 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px; /* Espaço entre os parágrafos */
+                    text-align: justify; /* Alinha o texto para justificar */
+                    border: solid rgb(5, 57, 109) 2px;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    padding: 10px;
+                }
+
+                .titulo_seguranca {
+                    font-size: 30px;
+                }
+
+                .centro {
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                #altura {
+                    padding: 50px 40px 0px 40px;
+                   
+                }
+                .rodape_certificado {
+                    background-image: url("./background-jogo.png");
+                    height: 100px;
+                    color: white;
+                    text-align: center;
+                }
+
+                #controletotal {
+                    margin: 0;
+                }
+
+                @media (max-width: 600px) {
+                    .flex1 { 
+                        font-size: 15px;
+                        margin-left: 0%;
+                        margin-right: 0%;
+                        padding: 5px;
+                    }
+
+                    .cabecalho.container { 
+                        justify-content: center;
+                    }
+                }
+
+            </style>
+    </body>
+</html>
