@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartoes Flip</title>
+
+<style>
+ body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 10px 0px 0px 0px;
+    background-image: url(background-jogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 230px;
+    height: 240px;
+    perspective: 1000px;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .card.flip .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+  }
+
+  .card-front {
+    background-color: blue;
+    flex-direction: column;
+  }
+
+  .card-back {
+    background-color: orange;
+    flex-direction: column;
+    transform: rotateY(180deg);
+  }
+
+  .card-front img,
+  .card-back img {
+    width: 90%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-front p,
+  .card-back p {
+    margin: 10px 0;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #tamanho {
+    height: 60%;
+  }
+
+  #tamanho1 {
+    height: 30%;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;  /*Ajuste conforme necessário*/ 
+  }
+
+  .botaoo {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: orange;
+      border-radius: 5px;
+  }
+
+  .botaoo:hover {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: blue;
+      color: white;
+  }
+
+
+  @media (max-width: 780px) {
+    .card {
+    width: 150px;
+    height: 160px;
+    perspective: 1000px;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  }
+
+  @media (min-width: 1800px) {
+  .card {
+    width: 350px;
+    height: 380px;
+    perspective: 1000px;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  }
+  
+
+</style>
+</head>
+<body>
+
+  
+    
+<div class="container">
+  <div class="container"><h1>Cards interativos - Códigos e resultados</h1> <img src="logo-html.png" width="70px" height="70px" alt=""></div>
+<div class="card" onclick="this.classList.toggle('flip')">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="img_lista_codigo.png" alt="Imagem 1">
+      <p>Lista não ordenada <br> Código - HTML</p>
+    </div>
+    <div class="card-back">
+      <img src="img_lista_nao_ordenada_texto.png" alt="Imagem 2">
+      <p>Resultado na página</p>
+    </div>
+  </div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="imagem_lista_ordenada_codigo.png" alt="Imagem 1">
+        <p>Lista ordenada <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img src="imagem_lista_ordenada_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="imagem_formulario_codigo.png" alt="Imagem 1">
+        <p>Formulário <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img src="imagem_formulario_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img id="tamanho" src="imagem_titulo_codigo.png" alt="Imagem 1">
+        <p>Título e Paragrafo <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img src="imagem_titulo_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img id="tamanho" src="imagem_img_codigo.png" alt="Imagem 1">
+        <p>Imagem <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img src="imagem_img_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="imagem_botao_radio_codigo.png" alt="Imagem 1">
+        <p>Botão radio <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img id="tamanho" src="imagem_botao_radio_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="imagem_botao_selecao_codigo.png" alt="Imagem 1">
+        <p>Botão seleção <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img id="tamanho" src="imagem_botao_selecao_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img id="tamanho" src="imagem_video_codigo.png" alt="Imagem 1">
+        <p>Vídeo <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img src="imagem_video_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img id="tamanho" src="imagem_audio_codigo.png" alt="Imagem 1">
+        <p>Áudio <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img id="tamanho1" src="imagem_audio_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="imagem_iframe_codigo.png" alt="Imagem 1">
+        <p>iframe <br> Código - HTML</p>
+      </div>
+      <div class="card-back">
+        <img src="imagem_iframe_pagina.png" alt="Imagem 2">
+        <p>Resultado na página</p>
+      </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+      <a href="../index_plataforma.html">
+          <input class="botaoo" type="button" value="Menu" onClick="history.forward()">
+      </a>
+    </div> 
+
+  </div>
+  </div>
+
+<!-- Repita o bloco acima para criar os 10 cards-->
+ 
+</div>
+
+
+
+
+</body>
+</html>
