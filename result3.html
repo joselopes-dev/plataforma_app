@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_pagina2.png">
+    <title>Resultados do Quiz</title>
+    <link rel="stylesheet" href="style_quiz3.css">
+</head>
+<body>
+
+    <div class="imagem1"><img src="CODE-X-1.png" width="200px" height="100px" alt="icone da plataforma"></div>
+
+    <div class="container">
+        <h1>Resultados do Quiz</h1>
+        <div id="final-score"><br>
+            <h2>Sua Nota Final:</h2>
+            <p id="score"></p><br>
+        </div>
+        <div id="correct-answers">
+            <h2>Respostas Corretas:</h2>
+            <ul id="correct-list"></ul><br>
+        </div>
+        <div id="incorrect-answers">
+            <h2>Respostas Incorretas:</h2>
+            <ul id="incorrect-list"></ul><br><br>
+        </div>
+        <div class="botao2">
+            <a href="quiz_charp.html"><input class="botaoo" type="button" value="Refazer" onClick="history.forward()"></a>
+        </div>
+        <div class="botao2">
+            <a href="../conteudo_charp.html"><input class="botaoo" type="button" value="Menu" onClick="history.forward()"></a>
+        </div>
+    </div>
+    
+    <script>
+        function loadResults() {
+            const correctAnswers = JSON.parse(sessionStorage.getItem('correctAnswers'));
+            const incorrectAnswers = JSON.parse(sessionStorage.getItem('incorrectAnswers'));
+            const finalScore = sessionStorage.getItem('finalScore');
+
+            document.getElementById('score').textContent = finalScore;
+
+            const correctList = document.getElementById('correct-list');
+            const incorrectList = document.getElementById('incorrect-list');
+
+            correctAnswers.forEach((answer) => {
+                const item = document.createElement('li');
+                item.textContent = answer;
+                correctList.appendChild(item);
+                item.style.color = "#6ceb56";
+                item.style.fontSize = "20px";
+            });
+
+            incorrectAnswers.forEach((answer) => {
+                const item = document.createElement('li');
+                item.textContent = answer;
+                incorrectList.appendChild(item);
+                item.style.color = "red";
+                item.style.fontSize = "20px";
+            });
+
+            sessionStorage.removeItem('correctAnswers');
+            sessionStorage.removeItem('incorrectAnswers');
+            sessionStorage.removeItem('finalScore');
+        }
+
+        document.addEventListener('DOMContentLoaded', loadResults);
+    </script>
+</body>
+</html>
