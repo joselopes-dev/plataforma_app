@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+     <title>Plataforma Code-X</title>
+     <link rel="icon" href="logo_pagina2.png">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,
+     600,700,&display=block">
+     <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/container.css">
+     <link rel="stylesheet" href="css/cabecalho.css">
+     <link rel="stylesheet" href="css/cursos.css">
+     <link rel="stylesheet" href="css/video.css">
+     <link rel="stylesheet" href="css/beneficios.css">
+     <link rel="stylesheet" href="css/rodape.css">
+     <link rel="stylesheet" href="css/form-newsletter.css">
+     <link rel="stylesheet" href="css/matricula.css">
+    </head>
+
+    <!-- Âncora de topo invisível -->
+    <a id="topo"></a>
+
+    <body>
+        <header class="cabecalho container">
+        
+                <img class="cabecalho__logo" src="CODE-X-1.png" alt="">
+            
+        </header>
+
+        <main>
+            <section class="cursos">
+                <article class="cursos__chamada --largura-grande" id="tamanho">
+                    <br>
+                    <h1 class="chamada__titulo">Python - <img src="logo_python.png" alt="" width="50px" height="50px"> <hr> </h1>
+                </article>
+
+                <div class="centro">
+                <div class="flex1">
+                    <p> O Python é uma linguagem de programação multi-paradigma, o que significa que suporta diferentes estilos de programação. 
+                        Aqui está um resumo dos principais paradigmas que o Python abrange:
+                    </p>
+                </div>
+
+                <div class="flex1">
+                    
+                        1. Programação Orientada a Objetos (POO) <br><br>
+                            <p>Na POO, o foco está em objetos que encapsulam dados e comportamentos. Python permite a criação de classes e objetos, 
+                            facilitando a organização do código e a reutilização.
+                            Classes e Objetos: Você pode definir classes e criar instâncias (objetos) delas.
+                            Herança: Permite criar novas classes a partir de classes existentes.
+                            Encapsulamento: Os atributos e métodos podem ser protegidos para controlar o acesso.</p>
+                               
+                        2. Programação Funcional <br><br>
+                            <p>Python também suporta o estilo funcional, onde as funções são tratadas como cidadãos de primeira classe. 
+                            Isso significa que funções podem ser passadas como argumentos, retornadas de outras funções e atribuídas a variáveis.
+                            Funções de ordem superior: Permitem manipular outras funções.
+                            Imutabilidade: Estruturas de dados como tuplas e conjuntos ajudam a promover a imutabilidade.
+                            Funções Lambda: Pequenas funções anônimas que podem ser definidas de forma concisa.</p>
+                  
+                        3. Programação Procedimental <br><br>
+                        <p>Nesse paradigma, o foco é em procedimentos (ou funções) que operam em dados. É um estilo mais tradicional que organiza o 
+                        código em sequências de instruções.
+                        Estruturas de Controle: Como loops e condicionais, que ajudam a controlar o fluxo de execução.
+                        Modularidade: O código pode ser dividido em funções e módulos, facilitando a manutenção. </p>                      
+                     
+                        Vantagens do Python <br><br>
+                        <p>Sintaxe Clara: A linguagem foi projetada para ser legível e fácil de aprender.
+                        Bibliotecas Extensas: Python possui uma vasta coleção de bibliotecas que suportam diversos paradigmas e aplicações.
+                        Comunidade Ativa: Uma comunidade vibrante que contribui com ferramentas e recursos. </p>                     
+                    </div>
+                <br><br>
+            </section>
+        </main>
+        
+        <footer class="rodape container">
+            <section class="rodape__secao rodape__secao--sobre"> 
+                <img class ="rodape__logo" src="./CODE-X-1.png" alt="logo da Code - X">
+
+                <p class="rodape_-infos-empresa">
+                    Sistemas de Informática 
+                    <br>
+                    CNPJ 23.444.124/0006-25
+                    <br>
+                    Rua da paz - Manaus/AM
+                     <br>
+                     Telefone (92) 98804-8026                   
+                    </p>
+                <ul class="rodape__lista-midias-sociais">
+                    <li class="rodape__item-midias-sociais">
+                        <a href="#">
+                            <img src="facebook-2429746_1280.png" alt="Code - X no Facebook">
+                            </a>
+                         </li>
+                    </li>
+                    <li class="rodape__item-midias-sociais">
+                        <a href="#">
+                      
+                         <img src="you-tube-3383601_1280.png" alt="Code - X no YouTube">
+                         </a>
+                         </li>
+                         <li class="rodape__item-midias-sociais">
+                         <a href="#">
+                         <img src="instagram-1675670_1280.png" alt="Instagram">
+                         </a>
+                         </li>
+                </ul>
+            </section>
+            </footer>
+
+                <!-- Âncora para voltar ao topo (seta) -->
+            <a href="#topo" class="topo">&#8679 <br> Topo</a>
+
+            <style>
+
+                   /* Estilo da âncora */
+                .topo {
+                    position: fixed;
+                    bottom: 100px;
+                    right: 20px;
+                    background-color: #007BFF;
+                    color: white;
+                    padding: 20px 15px;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: background-color 0.3s;
+                    cursor: pointer;
+                    z-index: 10; /* Um valor maior que o dos outros elementos */
+                }
+
+                .topo:hover {
+                    background-color: #0056b3;
+                    }
+
+                .cabecalho.container{
+                    display: flex;
+                    background-image: url(./home-background-mobile.png);
+                    height: 100px;
+                    width: 100%;  
+                    position: fixed;
+                }
+
+                .fle {
+                    display: flex;
+                    gap: 40px;  
+                    font-size: 15px;
+                }
+
+                .flex1 {
+                    /*display: flex;*/
+                    border: solid rgb(5, 57, 109) 2px;
+                    width: 90%;
+                    padding: 10px;
+                    text-align: justify;
+                }
+
+                .flex2 {
+                    /*display: flex;*/
+                    border: solid rgb(5, 57, 109) 2px;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: justify;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+
+
+                .centro {
+                    text-align: center;
+                   margin-right: 9.8%;
+                   margin-left: 12%;
+                }
+
+                .codigo1 {
+                    width: 100%; 
+                }
+
+                .centro p {
+                    text-align: justify; /* Justifica o texto */
+                    text-indent: 2cm; /* Indenta a primeira linha */
+                    margin-bottom: 1.5em; /* Adiciona espaço entre parágrafos */
+                    line-height: 1.5; /* Define o espaçamento entre as linhas */
+                }
+
+
+
+                @media (max-width: 480px) {
+                   .codigo1 {
+                        height: 70px;
+                    }  
+
+                    .fle { 
+                    font-size: 15px;
+                    }
+
+                    #tamanho {
+                    padding: 0px 0px 100px 0px;
+                }
+                }
+
+                .separa {
+                    padding: 0px 0px 10px 0px;
+
+                }
+
+               strong {
+                color: aqua;
+                font-style: italic;
+                font-weight: 800;
+                font-family: 'Times New Roman', Times, serif; 
+                }
+
+            </style>
+    </body>
+</html>
